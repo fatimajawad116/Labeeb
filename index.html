@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="labeb.css">
+    <title>لبيب</title>
+    <style>
+  @media (max-width: 768px) {
+    #myDiv {
+      width: 250px;
+      height: 250px;
+    }
+  }
+    </style>
+</head>
+<body>
+<header class="header">
+    <a href="/" class="logo-link">
+      <img src="images/logo.png" class="logo-img" alt="Logo" />
+    </a>
+    <nav class="desktop-nav">
+      <a href="#home" class="nav-link">الرئيسية<span class="underline"></span></a>
+      <a href="#about" class="nav-link">من لبيب<span class="underline"></span></a>
+      <a href="#faq" class="nav-link">الاسئلة الشائعة<span class="underline"></span></a>
+      <a href="#contact" class="nav-link">تواصل معنا<span class="underline"></span></a>
+    </nav>
+    <div class="menu-icon" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="#home" class="nav-link">الرئيسية<span class="underline"></span></a>
+      <a href="#about" class="nav-link">من لبيب<span class="underline"></span></a>
+      <a href="#faq" class="nav-link">الاسئلة الشائعة<span class="underline"></span></a>
+      <a href="#contact" class="nav-link">تواصل معنا<span class="underline"></span></a>
+    </div>
+  </header>
+<section class="home-section" id="home">
+    <form class="home-content">
+      <h3 class="home-title">
+        اهلا بكم في <span class="home-title-highlight">لبيب</span>
+      </h3>
+      <p class="home-description">
+        يُعد موقع Exam منصة متخصصة تُساعد الطلاب على التحضير للاختبارات عبر نماذج وأسئلة تفاعلية.
+      </p>
+      <div class="home-buttons">
+        <a href="login.html" class="home-btn">تسجيل الدخول</a>
+        <a href="signup.html" class="home-btn">تسجيل الدخول جديد</a>
+      </div>
+    </form>
+    <img src="./images/iconHome.svg" alt="Icon" class="home-svg" id="mySvg"/>
+    <div class="custom-shape-divider" >
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+    </div>
+  </section>
+  <section class="about-section" id="about">
+    <h1 class="about-title">
+      من <span class="highlight">لبيب؟</span>
+    </h1>
+    <div class="about-grid">
+      <div class="about-text">
+        <h3 class="about-subtitle animate-on-scroll">لبيب بوابتك للتفوق الدراسي</h3>
+
+        <p class="about-paragraph animate-on-scroll">
+          في لبيب، نؤمن أن النجاح يبدأ بخطوة معرفة مستواك الحقيقي.
+          نقدم لك منصّة متكاملة لاختبارات ذكية تغطي جميع المراحل الدراسية، مصممة بعناية لتعزيز مهاراتك الأكاديمية واكتشاف قدراتك الكاملة.
+        </p>
+
+        <p class="about-paragraph animate-on-scroll">
+          سواء كنت تطمح لتحقيق أفضل النتائج في المدرسة أو تسعى لتطوير مستواك الشخصي، فإن لبيب هو رفيقك الأمثل في رحلتك نحو التفوق.
+          مع اختبارات متجددة، تحليل فوري للأداء، وتجربة تعليمية ممتعة ومشوقة، لبيب يمنحك الأدوات التي تحتاجها لتحقيق طموحاتك بثقة.
+          <br />
+          <strong>لبيب.. معك خطوة بخطوة نحو التميّز والنجاح</strong>
+        </p>
+
+        <a href="#" class="about-button animate-on-scroll">اقرأ المزيد</a>
+      </div>
+      <div class="about-visual">
+        <img src="./images/iconAbout.svg" alt="رسم توضيحي" class="about-image" id="floating-image" />
+      </div>
+    </div>
+  </section>
+  <section class="faq-section" id="faq">
+    <div class="faq-header">
+      <h2>كيف يمكنني مساعدتك؟</h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>ما هي خدمة CORE Maturity؟</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          CORE Maturity هي خدمة تقييم نضج المؤسسات عبر معايير عالمية.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>هل يمكن تخصيص التقييم حسب المؤسسة؟</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          نعم، يتم تخصيص التقييمات بناءً على احتياجات وأهداف المؤسسة.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>كيف يمكنني البدء؟</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          يمكنك البدء بالتواصل معنا عبر نموذج الاتصال الموجود على الموقع.
+        </div>
+      </div>
+    </div>
+  </section>
+      <section class="contact-section" id="contact">
+        <h1 class="contact-title"><span class="highlight">تواصل</span> معنا</h1>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="icon-container">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3 class="card-title">ساعات العمل</h3>
+            <p>من الإثنين إلى الخميس: 08:00 صباحًا حتى 12:30 ظهرًا</p>
+            <p>الجمعة: 09:00 صباحًا حتى 12:00 ظهرًا</p>
+          </div>
+          <div class="contact-card">
+            <div class="icon-container">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3 class="card-title">البريد الإلكتروني</h3>
+            <p>fatimajawad1162002@gmail.com</p>
+            <p>fatimajawad1162002@gmail.com</p>
+          </div>
+          <div class="contact-card">
+            <div class="icon-container">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3 class="card-title">رقم الهاتف</h3>
+            <p>+123-456-7890</p>
+            <p>+123-456-7890</p>
+          </div>
+        </div>
+        <div class="contact-form-area">
+          <div class="email-icon-placeholder" >
+            <img src="./images/iconContact.svg" id="myDiv"/>
+          </div>
+          <form id="contactForm" class="contact-form">
+            <h3>راسلنا الآن</h3>
+            <div class="form-row">
+              <input type="text" placeholder="الاسم الكامل" required />
+              <input type="email" placeholder="البريد الإلكتروني" required />
+            </div>
+            <div class="form-row">
+              <input type="text" placeholder="رقم الهاتف" required />
+              <input type="text" placeholder="الموضوع" required />
+            </div>
+            <textarea placeholder="رسالتك" required></textarea>
+            <input
+              type="submit"
+              value="إرسال الرسالة"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </section>
+  <script src="script.js"></script>
+  
+</body>
+</html>
