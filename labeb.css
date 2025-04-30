@@ -832,3 +832,13 @@ textarea:focus {
   font-size: 13px;
   color: #777;
 }
+
+
+@media (max-width: 767px) {
+  .footer-container{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
