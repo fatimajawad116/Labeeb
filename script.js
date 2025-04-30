@@ -86,3 +86,5 @@ const element = document.getElementById("myDiv");
       xPercent: -10,
       yPercent: -10,
     });
+
+document.getElementById("year").textContent = new Date().getFullYear();
