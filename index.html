@@ -1,22 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'><link rel="stylesheet" href="./style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="labeb.css">
     <title>لبيب</title>
-    <style>
-  @media (max-width: 768px) {
-    #myDiv {
-      width: 250px;
-      height: 250px;
-    }
-  }
-    </style>
 </head>
 <body>
 <header class="header">
@@ -39,24 +34,70 @@
       <a href="#contact" class="nav-link">تواصل معنا<span class="underline"></span></a>
     </div>
   </header>
-<section class="home-section" id="home">
-    <form class="home-content">
-      <h3 class="home-title">
-        اهلا بكم في <span class="home-title-highlight">لبيب</span>
-      </h3>
-      <p class="home-description">
-        يُعد موقع Exam منصة متخصصة تُساعد الطلاب على التحضير للاختبارات عبر نماذج وأسئلة تفاعلية.
-      </p>
-      <div class="home-buttons">
-        <a href="login.html" class="home-btn">تسجيل الدخول</a>
-        <a href="signup.html" class="home-btn">تسجيل الدخول جديد</a>
+  <section class="home" id="home">
+    <div class="backround"></div>
+    <div class="container">
+      <div class="content">
+        <h2 class="logo">مرحبا بكم</h2>
+        <div class="text-sci">
+          <h2><br><span>في موقع لبيب التعليمي</span></h2>
+          <p>منصة تعليمية متكاملة تقدم تجربة تعلم مميزة للطلاب</p>
+        </div>
+        <div class="social-icon">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
       </div>
-    </form>
-    <img src="./images/iconHome.svg" alt="Icon" class="home-svg" id="mySvg"/>
-    <div class="custom-shape-divider" >
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-    </svg>
+      <div class="logreg-box">
+        <div class="form-box login">
+          <form>
+            <h2>تسجيل الدخول</h2>
+            <div class="input-box">
+              <span class="icon"><i class="uil uil-envelope"></i></span>
+              <input type="email" autocomplete="off"  required>
+              <label>البريد الإلكتروني</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="uil uil-lock"></i></span>
+              <input type="password" autocomplete="new-password" required>
+              <label>كلمة المرور</label>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox"/>تذكرني</label>
+              <a href="#">نسيت كلمة المرور؟</a>
+            </div>
+            <button type="submit" class="btn">تسجيل الدخول</button>
+            <div class="login-register">
+              <p>ليس لديك حساب؟ <a href="#" class="register-link">سجل الآن</a></p>
+            </div>
+          </form>
+        </div>
+      
+        <div class="form-box register">
+          <form>
+            <h2>انشاء حساب جديد</h2>
+            <div class="input-box">
+              <span class="icon"><i class="uil uil-envelope"></i></span>
+              <input type="email" autocomplete="off" required>
+              <label>البريد الإلكتروني</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="uil uil-lock"></i></span>
+              <input type="password" autocomplete="new-password" required>
+              <label>كلمة المرور</label>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox"/> أوافق على الشروط والأحكام</label>
+            </div>
+            <button type="submit" class="btn">تسجيل</button>
+            <div class="login-register">
+              <p>لديك حساب بالفعل؟ <a href="#" class="login-link">تسجيل الدخول</a></p>
+            </div>
+          </form>
+        </div>
+      </div>      
     </div>
   </section>
   <section class="about-section" id="about">
@@ -194,6 +235,21 @@
       </footer>
       
   <script src="script.js"></script>
+  <script>
+    const logregBox = document.querySelector('.logreg-box');
+    const registerLink = document.querySelector('.register-link');
+    const loginLink = document.querySelector('.login-link');
+  
+    registerLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      logregBox.classList.add('active');
+    });
+  
+    loginLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      logregBox.classList.remove('active');
+    });
+  </script>
   
 </body>
 </html>
