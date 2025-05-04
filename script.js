@@ -1,7 +1,7 @@
 
 const menuToggle = document.getElementById("menu-toggle");
 const mobileNav = document.getElementById("mobile-nav");
-
+document.getElementById("year").textContent = new Date().getFullYear();
 let isOpen = false;
 
 menuToggle.addEventListener("click", () => {
@@ -86,5 +86,11 @@ const element = document.getElementById("myDiv");
       xPercent: -10,
       yPercent: -10,
     });
+    lottie.loadAnimation({
+      container: document.getElementById('animated'),
+      renderer: 'svg',
+      loop: true, 
+      autoplay: true,
+      path: 'https://storyset.com/people' 
+    });
 
-document.getElementById("year").textContent = new Date().getFullYear();
