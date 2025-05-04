@@ -361,12 +361,14 @@ text-align: center;
   .content h2{
     font-size: 4px;
   }
+  .text-sci p {
+    font-size: 16px;
+  }
   .logreg-box {
-    width: 112%;
-    max-width: 429px;
-    order: 1;
-    margin-top: 7px;
-    margin-right: -17px;
+    width: 90%;
+    max-width: 100%;
+    margin: 11px auto;
+    padding: 0 15px;
   }
 
   .form-box {
@@ -376,12 +378,17 @@ text-align: center;
     width: 100%;
     height: 50%;
   }
-  .form-box .input-box{
-    margin: 0px -15px;
-    height: 45px;
+  .form-box .input-box {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px 0;
   }
   .form-box .remember-forgot {
     margin: 15px 0px 15px;
+  }
+  .input-box input {
+    font-size: 14px;
+    padding-right: 15px;
   }
   .input-box .icon{
     top: 13px;
