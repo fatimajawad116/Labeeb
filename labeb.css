@@ -34,7 +34,7 @@
     left: 0;
     right: 0;
     width: 100%;
-    padding: 2px 5.5%;
+    padding: 10px 5.5%;
     background: var(--background);
     display: flex;
     justify-content:start;
@@ -57,7 +57,7 @@
   }
   .desktop-nav a{
     position: relative;
-    font-size: 16px;
+    font-size: 22px;
     color: #1d1c1c;
     text-decoration: none;
     font-weight: 500;
@@ -153,8 +153,11 @@ transition: 0.5s;
   transform: translateX(100%); 
 }
 .content .logo{
-  font-size: 30px;
+  font-size: 25px;
   line-height: 1px;
+}
+.text-sci p{
+  font-size: 22px;
 }
 .content h2{
 font-size: 40px;
@@ -163,11 +166,11 @@ font-size: 40px;
 font-size: 25px;
 }
 .text-sci p {
-  font-size: 16px;
+  font-size: 25px;
   margin: 20px 0;
 }
 .social-icon a i{
-  font-size: 22px;
+  font-size: 28px;
   color: var(--orange);
   margin-right: 10px;
   transition: 0.5s ease;
@@ -195,8 +198,8 @@ text-align: center;
 }
 .form-box .input-box{
   position: relative;
-  width: 340px;
-  height: 30px;
+  width: 395px;
+  height: 58px;
   border-bottom: 2px solid #e5e7eb;
   margin: 30px 0px;
 }
@@ -223,7 +226,7 @@ text-align: center;
 }
 .input-box .icon{
   position: absolute;
-  top: 0px;
+  top: 23px;
   left: 0;
   font-size: 19px;
 }
@@ -293,8 +296,8 @@ text-align: center;
 }
 .logreg-box {
   position: relative;
-  width: 400px;
-  height: 520px;
+  width: 500px;
+  height: 760px;
   margin: 80px auto;
   overflow: hidden;
 }
@@ -352,13 +355,14 @@ text-align: center;
     margin-top: 80px;
   }
   .content h2{
-    font-size: 19px;
+    font-size: 4px;
   }
   .logreg-box {
-    width: 100%;
-    max-width: 360px;
+    width: 112%;
+    max-width: 429px;
     order: 1;
-    margin-top: 80px;
+    margin-top: 16px;
+    margin-right: -17px;
   }
 
   .form-box {
